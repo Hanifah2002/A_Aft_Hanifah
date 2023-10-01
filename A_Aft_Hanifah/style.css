@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+    scroll-margin-top: 80px;
+}
+
+.container{
+   width: 100%;
+   height: max-content;
+   background-color: rgb(15, 15, 15);
+}
+
+.container-header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),  url(/asset/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    transition: all ease-in-out .25s;
+    transform-origin: top;
+    z-index: 100;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all ease-in-out .25s;
+    transform-origin: bottom;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.judul h1 a {
+    font-size: 25px;
+    color: rgb(223, 107, 11);
+    font-family: 'Croissant One', cursive;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all ease-in-out .25s;
+}
+
+.judul h1 a:hover{
+    font-size: 26px;
+    text-shadow: 0 0 2px rgb(223, 107, 11);
+}
+
+.about-header h1:nth-child(1){
+    color: rgb(223, 107, 11);
+    font-size: 40px;
+}
+
+.about-header h1:nth-child(2){
+    font-size: 50px;
+}
+
+.about-header p:nth-child(3){
+    font-size: medium;
+    font-weight: 500;
+}
+.nav-bar{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 8px 0;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.nav-bar ul li a {
+    font-weight: 600;
+    text-decoration: none;
+    transition: all ease-in-out .25s;
+    color: rgb(223, 107, 11);
+}
+
+.nav-bar ul li a:hover{
+    color: rgb(255, 135, 37);
+}
+
+
+
+.content-header {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.content-header .image-header img {
+    box-shadow: 0 0 10px black;
+    border-radius: 50%;
+    width: 350px;
+}
+
+.about-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-header button {
+    margin-top: 10px;
+    background-color: rgb(171, 77, 0);
+    border: none;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 3px;
+    width: 200px;
+    height: 38px;
+    font-weight: 600;
+    font-size: medium;
+    cursor: pointer;
+    transition: all ease-in-out .25s;
+}
+
+.about-header button:hover{
+    background-color: rgb(241, 125, 29);
+}
+
+.icon {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.icon i {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.content{
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.container-about {
+    padding-bottom: 100px;
+}
+
+h1.menu{
+    color: rgb(241, 125, 29);
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.about {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 0 0 10px black;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.image-about img {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgb(241, 125, 29);
+    border-radius: 10px;
+    width: 330px;
+    object-fit: cover;
+}
+
+.about-me h1 {
+    font-size: 40px;
+    color: rgb(241, 125, 29);
+}
+
+.about-me p{
+    margin: 20px 0;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+
+.container-service{
+    padding-bottom: 100px;
+}
+
+.list-services{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 10px black;
+    padding: 30px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item-services {
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 5px rgb(241, 125, 29);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.item-services img {
+    width: 50px;
+}
+.item-services h2 {
+    font-size: large;
+    margin: 5px;
+}
+
+.item-services p{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.container-ekperience{
+    padding-bottom: 100px;
+}
+
+.ekperience {
+    border-radius: 10px;
+    font-size: 80px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-content: space-around;
+    gap: 120px;
+    box-shadow: 0 0 10px black;
+    padding: 30px;
+}
+
+
+
+.contact {
+    display: flex;
+    box-shadow: 0 0 10px black;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+form {
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+form .username {
+    display: flex;
+}
+
+form button {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(171, 77, 0);
+    border: none;
+    box-shadow: 2px 2px 5px black;
+    font-size: medium;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 0 5px black;
+    transition: all ease-in-out .25s;
+}
+form button:hover{
+    background-color: rgb(241, 125, 29);
+}
+
+.username input {
+    background-color: whitesmoke;
+    width: 400px;
+    height: 30px;
+    color: black;
+    padding: 5px;
+    font-weight: 500;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.username h5 {
+    width: 100px;
+    font-size: large;
+}
+
+.username textarea {
+    background-color: whitesmoke;
+    width: 400px;
+    color: black;
+    padding: 5px;
+    font-weight: 500;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+iframe {
+    border-radius: 10px;
+    filter:opacity(0.8);
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(7, 7, 7);
+}
+
+footer .footer{
+    height: 100px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    border-top: 2px solid rgba(223, 106, 11, 0.7);
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    color: rgba(223, 106, 11, 0.7);
+}
+
+
